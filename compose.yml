@@ -1,0 +1,11 @@
+services:
+  atcoder:
+    image: atcoder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: atcoder
+    volumes:
+      - .:/workdir
+    tty: true
+    stdin_open: true
